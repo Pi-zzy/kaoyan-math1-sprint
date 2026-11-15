@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title description">
+  <title id="title">Support transformation and the event region</title>
+  <desc id="description">The triangular support 0&lt;x&lt;y&lt;1 maps bijectively to 0&lt;u,v&lt;1 by u=x/y,v=y. Crosshatching denotes x&lt;y/2,y&gt;1/2 and the corresponding rectangle.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="black" />
+    </marker>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="white" />
+      <path d="M-2 2 L2 -2 M0 10 L10 0 M8 12 L12 8" stroke="black" stroke-width="0.65" />
+    </pattern>
+    <pattern id="crosshatch" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="white" />
+      <path d="M-2 2 L2 -2 M0 10 L10 0 M8 12 L12 8" stroke="black" stroke-width="0.65" />
+      <path d="M-2 8 L2 12 M0 0 L10 10 M8 -2 L12 2" stroke="black" stroke-width="0.65" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="1000" height="540" fill="white" />
+  <text x="35" y="38" font-size="22" text-anchor="start" font-family="Arial, sans-serif" font-weight="bold" fill="black">S14: support and event limits must transform together</text>
+  <text x="80" y="83" font-size="19" text-anchor="start" font-family="Arial, sans-serif" font-weight="bold" fill="black">(x,y): 0&lt;x&lt;y&lt;1</text>
+  <text x="590" y="83" font-size="19" text-anchor="start" font-family="Arial, sans-serif" font-weight="bold" fill="black">(u,v): 0&lt;u&lt;1, 0&lt;v&lt;1</text>
+  <polygon points="80.000,435.000 80.000,133.113 405.472,133.113" fill="url(#hatch)" stroke="black" stroke-width="1.3" />
+  <polygon points="80.000,284.057 161.368,284.057 242.736,133.113 80.000,133.113" fill="url(#crosshatch)" stroke="black" stroke-width="1.3" />
+  <line x1="80.0" y1="435.0" x2="242.73584905660377" y2="133.11320754716982" stroke="black" stroke-width="1.6" stroke-dasharray="8 6" />
+  <line x1="80.0" y1="284.0566037735849" x2="382.688679245283" y2="284.0566037735849" stroke="black" stroke-width="1" stroke-dasharray="8 6" />
+  <polygon points="590.000,435.000 590.000,133.113 915.472,133.113 915.472,435.000" fill="url(#hatch)" stroke="black" stroke-width="1.3" />
+  <polygon points="590.000,284.057 752.736,284.057 752.736,133.113 590.000,133.113" fill="url(#crosshatch)" stroke="black" stroke-width="1.3" />
+  <line x1="752.7358490566038" y1="435.0" x2="752.7358490566038" y2="133.11320754716982" stroke="black" stroke-width="1.6" stroke-dasharray="8 6" />
+  <line x1="590.0" y1="284.0566037735849" x2="915.4716981132076" y2="284.0566037735849" stroke="black" stroke-width="1.6" stroke-dasharray="8 6" />
+  <line x1="80.0" y1="435.0" x2="425.0" y2="435.0" stroke="black" stroke-width="1.6" marker-end="url(#arrow)" />
+  <line x1="80.0" y1="435.0" x2="80.0" y2="115.0" stroke="black" stroke-width="1.6" marker-end="url(#arrow)" />
+  <text x="439" y="441.0" font-size="19" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">x</text>
+  <text x="64.0" y="101" font-size="19" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">y</text>
+  <line x1="80.0" y1="431.0" x2="80.0" y2="439.0" stroke="black" stroke-width="1" />
+  <line x1="76.0" y1="435.0" x2="84.0" y2="435.0" stroke="black" stroke-width="1" />
+  <line x1="242.73584905660377" y1="431.0" x2="242.73584905660377" y2="439.0" stroke="black" stroke-width="1" />
+  <text x="242.73584905660377" y="458.0" font-size="14" text-anchor="middle" font-family="Arial, sans-serif" font-weight="normal" fill="black">0.5</text>
+  <line x1="76.0" y1="284.0566037735849" x2="84.0" y2="284.0566037735849" stroke="black" stroke-width="1" />
+  <text x="71.0" y="289.0566037735849" font-size="14" text-anchor="end" font-family="Arial, sans-serif" font-weight="normal" fill="black">0.5</text>
+  <line x1="405.47169811320754" y1="431.0" x2="405.47169811320754" y2="439.0" stroke="black" stroke-width="1" />
+  <text x="405.47169811320754" y="458.0" font-size="14" text-anchor="middle" font-family="Arial, sans-serif" font-weight="normal" fill="black">1</text>
+  <line x1="76.0" y1="133.11320754716982" x2="84.0" y2="133.11320754716982" stroke="black" stroke-width="1" />
+  <text x="71.0" y="138.11320754716982" font-size="14" text-anchor="end" font-family="Arial, sans-serif" font-weight="normal" fill="black">1</text>
+  <text x="68.0" y="456.0" font-size="14" text-anchor="end" font-family="Arial, sans-serif" font-weight="normal" fill="black">0</text>
+  <line x1="590.0" y1="435.0" x2="935.0" y2="435.0" stroke="black" stroke-width="1.6" marker-end="url(#arrow)" />
+  <line x1="590.0" y1="435.0" x2="590.0" y2="115.0" stroke="black" stroke-width="1.6" marker-end="url(#arrow)" />
+  <text x="949" y="441.0" font-size="19" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">u</text>
+  <text x="574.0" y="101" font-size="19" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">v</text>
+  <line x1="590.0" y1="431.0" x2="590.0" y2="439.0" stroke="black" stroke-width="1" />
+  <line x1="586.0" y1="435.0" x2="594.0" y2="435.0" stroke="black" stroke-width="1" />
+  <line x1="752.7358490566038" y1="431.0" x2="752.7358490566038" y2="439.0" stroke="black" stroke-width="1" />
+  <text x="752.7358490566038" y="458.0" font-size="14" text-anchor="middle" font-family="Arial, sans-serif" font-weight="normal" fill="black">0.5</text>
+  <line x1="586.0" y1="284.0566037735849" x2="594.0" y2="284.0566037735849" stroke="black" stroke-width="1" />
+  <text x="581.0" y="289.0566037735849" font-size="14" text-anchor="end" font-family="Arial, sans-serif" font-weight="normal" fill="black">0.5</text>
+  <line x1="915.4716981132076" y1="431.0" x2="915.4716981132076" y2="439.0" stroke="black" stroke-width="1" />
+  <text x="915.4716981132076" y="458.0" font-size="14" text-anchor="middle" font-family="Arial, sans-serif" font-weight="normal" fill="black">1</text>
+  <line x1="586.0" y1="133.11320754716982" x2="594.0" y2="133.11320754716982" stroke="black" stroke-width="1" />
+  <text x="581.0" y="138.11320754716982" font-size="14" text-anchor="end" font-family="Arial, sans-serif" font-weight="normal" fill="black">1</text>
+  <text x="578.0" y="456.0" font-size="14" text-anchor="end" font-family="Arial, sans-serif" font-weight="normal" fill="black">0</text>
+  <rect x="99.0377358490566" y="179.52830188679246" width="26" height="25" fill="white" stroke="black" stroke-width="0.7" />
+  <text x="106.0377358490566" y="199.52830188679246" font-size="18" text-anchor="start" font-family="Arial, sans-serif" font-weight="bold" fill="black">E</text>
+  <rect x="278.0471698113207" y="164.43396226415098" width="26" height="25" fill="white" stroke="black" stroke-width="0.7" />
+  <text x="285.0471698113207" y="184.43396226415098" font-size="18" text-anchor="start" font-family="Arial, sans-serif" font-weight="bold" fill="black">D</text>
+  <rect x="648.0943396226415" y="182.54716981132077" width="26" height="25" fill="white" stroke="black" stroke-width="0.7" />
+  <text x="655.0943396226415" y="202.54716981132077" font-size="18" text-anchor="start" font-family="Arial, sans-serif" font-weight="bold" fill="black">E</text>
+  <rect x="827.1037735849056" y="333.49056603773585" width="26" height="25" fill="white" stroke="black" stroke-width="0.7" />
+  <text x="834.1037735849056" y="353.49056603773585" font-size="18" text-anchor="start" font-family="Arial, sans-serif" font-weight="bold" fill="black">D</text>
+  <text x="327.35849056603774" y="235.75471698113205" font-size="16" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">x=y</text>
+  <rect x="249.5" y="139.26415094339623" width="65" height="23" fill="white" />
+  <text x="252.5" y="157.26415094339623" font-size="16" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">x=y/2</text>
+  <text x="268.77358490566036" y="275.0" font-size="15" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">y=1/2</text>
+  <line x1="448" y1="265" x2="565" y2="265" stroke="black" stroke-width="1.6" marker-end="url(#arrow)" />
+  <text x="505" y="232" font-size="17" text-anchor="middle" font-family="Arial, sans-serif" font-weight="normal" fill="black">u=x/y</text>
+  <text x="505" y="300" font-size="17" text-anchor="middle" font-family="Arial, sans-serif" font-weight="normal" fill="black">v=y</text>
+  <text x="80" y="490" font-size="18" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">E: x&lt;y/2, y&gt;1/2</text>
+  <text x="590" y="490" font-size="18" text-anchor="start" font-family="Arial, sans-serif" font-weight="normal" fill="black">E: u&lt;1/2, v&gt;1/2</text>
+</svg>

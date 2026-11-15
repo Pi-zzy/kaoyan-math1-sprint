@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="475.2" viewBox="0 0 1000 660" role="img" aria-labelledby="title description">
+<title id="title">Mock 04 Q20: spherical cap and orientations</title>
+<desc id="description">Meridional section in orthonormal v,u coordinates. Unit sphere cut at u=1/sqrt(3). The thick solid cap has a normal arrow toward the origin. The supplementary disk has outward normal along negative u. The remaining sphere is dashed, the disk section dash-dot, and the cap volume hatched.</desc>
+<metadata id="geometry">{&quot;axes&quot;: [&quot;v&quot;, &quot;u&quot;], &quot;base_normal_end&quot;: [-0.3, 0.27735026918962585], &quot;base_normal_start&quot;: [-0.3, 0.5773502691896258], &quot;base_radius&quot;: 0.816496580927726, &quot;normal_end&quot;: [0.41250000000000003, 0.6263734908183775], &quot;normal_start&quot;: [0.55, 0.8351646544245033], &quot;paper&quot;: &quot;04&quot;, &quot;plane_height&quot;: 0.5773502691896258, &quot;question&quot;: 20, &quot;styles&quot;: {&quot;base&quot;: &quot;dash-dot&quot;, &quot;cap&quot;: &quot;solid&quot;, &quot;rest&quot;: &quot;dashed&quot;, &quot;volume&quot;: &quot;hatch&quot;}, &quot;u_axis&quot;: &quot;(1,1,1)/sqrt(3)&quot;, &quot;v_axis&quot;: &quot;(1,-1,0)/sqrt(2)&quot;}</metadata>
+<defs><pattern id="hatch" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M-2 10 L10 -2 M8 12 L12 8" stroke="#777" stroke-width="1"/></pattern><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#111"/></marker></defs>
+<rect width="1000" height="660" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+<text x="42.000" y="43.000" font-size="23" text-anchor="start">Mock 04 / Q20 - meridional section and normals</text>
+<text x="620.000" y="104.000" font-size="20" text-anchor="start">Orthonormal coordinates</text>
+<text x="620.000" y="139.000" font-size="18" text-anchor="start">u = (x+y+z)/sqrt(3)</text>
+<text x="620.000" y="174.000" font-size="18" text-anchor="start">v along (1,-1,0)/sqrt(2)</text>
+<text x="620.000" y="214.000" font-size="18" text-anchor="start">Sphere: v^2 + u^2 = 1</text>
+<text x="620.000" y="249.000" font-size="18" text-anchor="start">Plane: u = d = 1/sqrt(3)</text>
+<text x="620.000" y="284.000" font-size="18" text-anchor="start">A = (-sqrt(2/3), d)</text>
+<text x="620.000" y="319.000" font-size="18" text-anchor="start">B = ( sqrt(2/3), d)</text>
+<text x="620.000" y="354.000" font-size="18" text-anchor="start">C = (0,1),   O = (0,0)</text>
+<text x="620.000" y="405.000" font-size="18" text-anchor="start">Thick solid: cap Sigma</text>
+<text x="620.000" y="440.000" font-size="18" text-anchor="start">Thin dashed: remaining sphere</text>
+<text x="620.000" y="475.000" font-size="18" text-anchor="start">Dash-dot: disk S0 in section</text>
+<text x="620.000" y="510.000" font-size="18" text-anchor="start">Hatch: enclosed volume Omega</text>
+<text x="620.000" y="557.000" font-size="18" text-anchor="start">n_in = -r  (toward O)</text>
+<text x="620.000" y="592.000" font-size="18" text-anchor="start">n_0,out = -e_u  (below S0)</text>
+<line id="v-axis" x1="48.000" y1="360.000" x2="568.800" y2="360.000" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line id="u-axis" x1="300.000" y1="597.300" x2="300.000" y2="87.000" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="579.300" y="368.400" font-size="22" text-anchor="start">v</text>
+<text x="312.600" y="84.900" font-size="22" text-anchor="start">u</text>
+<circle id="rest-sphere" cx="300" cy="360" r="210" fill="none" stroke="#111" stroke-width="1.4" stroke-dasharray="6 5"/>
+<path id="cap-volume" d="M128.536 238.756 L130.488 236.042 L132.483 233.359 L134.520 230.708 L136.600 228.089 L138.721 225.505 L140.883 222.954 L143.085 220.438 L145.327 217.957 L147.608 215.513 L149.927 213.105 L152.285 210.734 L154.680 208.401 L157.112 206.107 L159.581 203.851 L162.085 201.635 L164.623 199.460 L167.197 197.325 L169.803 195.231 L172.443 193.179 L175.115 191.169 L177.819 189.202 L180.554 187.279 L183.319 185.399 L186.114 183.563 L188.937 181.772 L191.789 180.027 L194.668 178.327 L197.574 176.673 L200.506 175.065 L203.463 173.504 L206.444 171.991 L209.450 170.525 L212.478 169.108 L215.528 167.739 L218.600 166.418 L221.692 165.147 L224.804 163.924 L227.936 162.752 L231.085 161.630 L234.252 160.558 L237.436 159.536 L240.636 158.565 L243.850 157.646 L247.079 156.778 L250.321 155.961 L253.576 155.196 L256.843 154.482 L260.120 153.821 L263.408 153.213 L266.705 152.656 L270.010 152.152 L273.323 151.701 L276.643 151.303 L279.969 150.958 L283.300 150.665 L286.635 150.426 L289.973 150.240 L293.314 150.106 L296.657 150.027 L300.000 150.000 L303.343 150.027 L306.686 150.106 L310.027 150.240 L313.365 150.426 L316.700 150.665 L320.031 150.958 L323.357 151.303 L326.677 151.701 L329.990 152.152 L333.295 152.656 L336.592 153.213 L339.880 153.821 L343.157 154.482 L346.424 155.196 L349.679 155.961 L352.921 156.778 L356.150 157.646 L359.364 158.565 L362.564 159.536 L365.748 160.558 L368.915 161.630 L372.064 162.752 L375.196 163.924 L378.308 165.147 L381.400 166.418 L384.472 167.739 L387.522 169.108 L390.550 170.525 L393.556 171.991 L396.537 173.504 L399.494 175.065 L402.426 176.673 L405.332 178.327 L408.211 180.027 L411.063 181.772 L413.886 183.563 L416.681 185.399 L419.446 187.279 L422.181 189.202 L424.885 191.169 L427.557 193.179 L430.197 195.231 L432.803 197.325 L435.377 199.460 L437.915 201.635 L440.419 203.851 L442.888 206.107 L445.320 208.401 L447.715 210.734 L450.073 213.105 L452.392 215.513 L454.673 217.957 L456.915 220.438 L459.117 222.954 L461.279 225.505 L463.400 228.089 L465.480 230.708 L467.517 233.359 L469.512 236.042 L471.464 238.756 Z" fill="url(#hatch)" stroke="#111" stroke-width="0"/>
+<path id="cap" d="M128.536 238.756 L130.488 236.042 L132.483 233.359 L134.520 230.708 L136.600 228.089 L138.721 225.505 L140.883 222.954 L143.085 220.438 L145.327 217.957 L147.608 215.513 L149.927 213.105 L152.285 210.734 L154.680 208.401 L157.112 206.107 L159.581 203.851 L162.085 201.635 L164.623 199.460 L167.197 197.325 L169.803 195.231 L172.443 193.179 L175.115 191.169 L177.819 189.202 L180.554 187.279 L183.319 185.399 L186.114 183.563 L188.937 181.772 L191.789 180.027 L194.668 178.327 L197.574 176.673 L200.506 175.065 L203.463 173.504 L206.444 171.991 L209.450 170.525 L212.478 169.108 L215.528 167.739 L218.600 166.418 L221.692 165.147 L224.804 163.924 L227.936 162.752 L231.085 161.630 L234.252 160.558 L237.436 159.536 L240.636 158.565 L243.850 157.646 L247.079 156.778 L250.321 155.961 L253.576 155.196 L256.843 154.482 L260.120 153.821 L263.408 153.213 L266.705 152.656 L270.010 152.152 L273.323 151.701 L276.643 151.303 L279.969 150.958 L283.300 150.665 L286.635 150.426 L289.973 150.240 L293.314 150.106 L296.657 150.027 L300.000 150.000 L303.343 150.027 L306.686 150.106 L310.027 150.240 L313.365 150.426 L316.700 150.665 L320.031 150.958 L323.357 151.303 L326.677 151.701 L329.990 152.152 L333.295 152.656 L336.592 153.213 L339.880 153.821 L343.157 154.482 L346.424 155.196 L349.679 155.961 L352.921 156.778 L356.150 157.646 L359.364 158.565 L362.564 159.536 L365.748 160.558 L368.915 161.630 L372.064 162.752 L375.196 163.924 L378.308 165.147 L381.400 166.418 L384.472 167.739 L387.522 169.108 L390.550 170.525 L393.556 171.991 L396.537 173.504 L399.494 175.065 L402.426 176.673 L405.332 178.327 L408.211 180.027 L411.063 181.772 L413.886 183.563 L416.681 185.399 L419.446 187.279 L422.181 189.202 L424.885 191.169 L427.557 193.179 L430.197 195.231 L432.803 197.325 L435.377 199.460 L437.915 201.635 L440.419 203.851 L442.888 206.107 L445.320 208.401 L447.715 210.734 L450.073 213.105 L452.392 215.513 L454.673 217.957 L456.915 220.438 L459.117 222.954 L461.279 225.505 L463.400 228.089 L465.480 230.708 L467.517 233.359 L469.512 236.042 L471.464 238.756" fill="none" stroke="#111" stroke-width="3.2"/>
+<line id="plane-extension" x1="60.600" y1="238.756" x2="539.400" y2="238.756" stroke="#111" stroke-width="1" stroke-dasharray="10 4 2 4"/>
+<line id="base-disk" x1="128.536" y1="238.756" x2="471.464" y2="238.756" stroke="#111" stroke-width="2.4" stroke-dasharray="10 4 2 4"/>
+<line id="inner-normal" x1="415.500" y1="184.615" x2="386.625" y2="228.462" stroke="#111" stroke-width="2.2" marker-end="url(#arrow)"/>
+<line id="base-outward-normal" x1="237.000" y1="238.756" x2="237.000" y2="301.756" stroke="#111" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="420.000" y="177.000" font-size="19" text-anchor="start">n_in</text>
+<text x="131.000" y="303.000" font-size="18" text-anchor="start">n_0,out</text>
+<text x="259.000" y="197.000" font-size="18" text-anchor="start">Omega</text>
+<text x="451.000" y="143.000" font-size="21" text-anchor="start">Sigma</text>
+<text x="420.000" y="260.000" font-size="19" text-anchor="start">S0</text>
+<text x="314.000" y="234.000" font-size="18" text-anchor="start">d</text>
+<circle cx="128.536" cy="238.756" r="3.8" fill="#111"/>
+<text x="103.536" y="230.756" font-size="20" text-anchor="start">A</text>
+<circle cx="471.464" cy="238.756" r="3.8" fill="#111"/>
+<text x="481.464" y="230.756" font-size="20" text-anchor="start">B</text>
+<text x="276.000" y="139.000" font-size="20" text-anchor="start">C</text>
+<text x="307.000" y="382.000" font-size="19" text-anchor="start">O</text>
+<line x1="90.000" y1="356.000" x2="90.000" y2="364.000" stroke="#111"/>
+<text x="90.000" y="385.000" font-size="18" text-anchor="middle">-1</text>
+<line x1="296.000" y1="570.000" x2="304.000" y2="570.000" stroke="#111"/>
+<text x="311.000" y="576.000" font-size="18" text-anchor="start">-1</text>
+<line x1="510.000" y1="356.000" x2="510.000" y2="364.000" stroke="#111"/>
+<text x="510.000" y="385.000" font-size="18" text-anchor="middle">1</text>
+<line x1="296.000" y1="150.000" x2="304.000" y2="150.000" stroke="#111"/>
+<text x="311.000" y="156.000" font-size="18" text-anchor="start">1</text>
+<text x="62.000" y="625.000" font-size="17" text-anchor="start">S0 is a disk in space, not the length of the drawn segment.</text>
+</g></svg>

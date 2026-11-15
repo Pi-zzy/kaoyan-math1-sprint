@@ -1,0 +1,107 @@
+/* 150分版 阅读站 — 单一样式表（离线，无外部依赖） */
+:root { --maxw: 960px; --line: #e3e6ea; --ink: #1f2328; --muted: #6a737d;
+  --brand: #1a5fb4; --ans-border: #d9a441; --ans-bg: #fffdf5; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; color: var(--ink); background: #f6f7f9;
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC",
+    "Noto Sans CJK SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  font-size: 16px; line-height: 1.75; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 18px 18px 72px; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3, h4 { line-height: 1.4; margin: 1.4em 0 .6em; }
+h1 { font-size: 1.55em; margin-top: .4em; }
+h2 { font-size: 1.3em; padding-bottom: .25em; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.12em; }
+p { margin: .7em 0; overflow-wrap: break-word; }
+strong { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.8em 0; }
+blockquote { margin: 1em 0; padding: .6em 1em; background: #f2f6fb; border-left: 4px solid #9dbbe3;
+  border-radius: 0 8px 8px 0; color: #2c3e57; }
+blockquote p { margin: .35em 0; }
+code { background: #eef1f4; border-radius: 4px; padding: .1em .35em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+pre { background: #f6f8fa; border: 1px solid var(--line); border-radius: 8px; padding: .8em 1em;
+  overflow-x: auto; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+/* 导航 */
+.crumbs { font-size: .88em; color: var(--muted); margin-bottom: .4em; }
+.crumbs a { color: var(--brand); }
+.topnav { display: flex; flex-wrap: wrap; gap: 6px; margin: .6em 0 1.2em; }
+.topnav a { font-size: .85em; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px;
+  background: #fff; color: #33415c; }
+.topnav a.cur { background: var(--brand); border-color: var(--brand); color: #fff; }
+.pagenav { display: flex; justify-content: space-between; gap: 8px; margin-top: 2.4em;
+  border-top: 1px solid var(--line); padding-top: 1em; }
+.pagenav a { font-size: .92em; }
+/* 表格：窄屏横向滚动，不裁切 */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1em 0;
+  border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+table { border-collapse: collapse; width: 100%; font-size: .93em; }
+th, td { border: 1px solid var(--line); padding: .45em .7em; vertical-align: top; text-align: left; }
+th { background: #f0f3f7; font-weight: 650; }
+tbody tr:nth-child(even) { background: #fafbfc; }
+/* 图片 */
+.img-wrap { display: block; text-align: center; margin: 1em 0; }
+.img-wrap img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px;
+  background: #fff; }
+.img-missing { display: block; margin: 1em 0; padding: .6em 1em; border: 1px dashed #d99;
+  background: #fff6f6; border-radius: 8px; color: #a33; font-size: .92em; }
+/* 数学 */
+.math-block { margin: .9em 0; overflow-x: auto; overflow-y: hidden; }
+.math-tex { overflow-x: auto; }
+.math-err { display: inline-block; color: #a33; background: #fff3f3; border: 1px dashed #d99;
+  border-radius: 4px; padding: 0 .4em; font-family: ui-monospace, Menlo, monospace; font-size: .9em; }
+.katex-display { margin: .8em 0; overflow-x: auto; overflow-y: hidden; padding: .15em 0; }
+.katex { font-size: 1.06em; }
+/* 目录 */
+.toc { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 1.2em 0; }
+.toc summary { cursor: pointer; padding: .5em .9em; font-weight: 650; color: #33415c; }
+.toc .toc-in { padding: 0 1.1em .8em; }
+.toc ol { margin: .3em 0; padding-left: 1.4em; }
+.toc li { margin: .15em 0; font-size: .93em; }
+/* 答案折叠 */
+details.qa { border: 1px solid #e6d9b8; border-left: 4px solid var(--ans-border);
+  background: var(--ans-bg); border-radius: 8px; margin: 1.1em 0; }
+details.qa summary { cursor: pointer; list-style: none; padding: .55em .9em;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-weight: 650;
+  background: #faf3df; border-radius: 4px 4px 0 0; }
+details.qa summary::-webkit-details-marker { display: none; }
+details.qa summary::before { content: "\25B8"; color: var(--ans-border); font-size: .9em; }
+details.qa[open] summary::before { content: "\25BE"; }
+details.qa summary .qa-hint { margin-left: auto; font-size: .78em; font-weight: 500;
+  color: #8a6d1f; background: #f5e8bd; border-radius: 999px; padding: 1px 10px; white-space: nowrap; }
+.qa-body { padding: .2em 1em .8em; }
+.sub-h { display: block; margin: 1em 0 .4em; font-size: 1.02em; }
+.ans-notice { border: 1px solid #e6d9b8; background: #faf3df; border-radius: 8px;
+  padding: .7em 1em; margin: 1em 0; font-size: .95em; }
+.ans-notice button { cursor: pointer; border: 1px solid var(--ans-border); background: #fff;
+  border-radius: 6px; padding: 3px 12px; font-size: .9em; margin-left: 6px; }
+.ans-notice button:hover { background: #f5e8bd; }
+/* 首页卡片 */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin: 1.2em 0; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.card h2 { border: 0; margin: 0 0 .4em; font-size: 1.12em; }
+.card .meta { color: var(--muted); font-size: .86em; margin-bottom: .5em; }
+.card ul { margin: 0; padding-left: 1.3em; font-size: .92em; }
+.card li { margin: .2em 0; }
+.miss-file { color: var(--muted); list-style-type: circle; }
+.badge { display: inline-block; font-size: .74em; border-radius: 999px; padding: 1px 9px;
+  vertical-align: 2px; margin-left: 6px; }
+.badge.ok { background: #e3f2e5; color: #1d7a2f; border: 1px solid #bfe3c4; }
+.badge.partial { background: #fdf3d7; color: #8a6d1f; border: 1px solid #ecd9a0; }
+footer.site { margin-top: 3em; padding-top: 1em; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: .82em; line-height: 1.6; }
+@media (max-width: 640px) {
+  body { font-size: 15.5px; }
+  .wrap { padding: 12px 12px 56px; }
+  .katex { font-size: 1em; }
+  .katex-display { margin: .6em 0; }
+  th, td { padding: .35em .5em; }
+}
+@media print {
+  body { background: #fff; }
+  .topnav, .pagenav, .ans-notice button, details.qa summary .qa-hint { display: none; }
+  details.qa { break-inside: avoid; }
+}
